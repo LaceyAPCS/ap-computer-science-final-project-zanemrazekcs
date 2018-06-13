@@ -1,0 +1,17 @@
+
+    When it comes to writing programs for Amazon Alexa's, both the lamda functions and developer services must be both
+used to work in coordination with one another. I used my developer intents to serve as responses to each function that
+was in my lamda function. To do this, I created values in developer services that would hold the user's answer to each 
+question. Implementing this in my code I used the line, let wind = this.event.request.intent.slots.wind.value; in order
+to make a variable I could use from the information the developer variable received when each question was answered.
+    To assemble my report I created a var that would get sentences added to it. After each question was asked, the
+variable was tested in if statements to determine what the user said the weather conditions were like. Each statement
+proved to be true would add a sentence to the report variable using a simple += assignment. At the end the report variable
+would be ready to speak to the user as a total of each sentence added along the way.
+    To clean up my code and not create to many functions and intents in the lamda function and developer service I moved
+each question to reside in the function before its intent. For example, the storm question is asked at the end of the 
+windIntent function so the stormIntent function starts by creating the variable used for the if statements. At the end of
+the program the report is spoken by Alexa at the end of the tide function.
+    My final major technicality in the program was the user inputs not working properly. It would be extremely difficult
+for the user to know how to respond to each question without causing an error. To fix this, each question directs the user
+on how to answer the question so they can use the proper format to ensure the code is executed.
