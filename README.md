@@ -1,6 +1,6 @@
 
 The purpose of this program is to create a surf report based on three different factors wind, storms, and tide.
-The program is initialized by telling ALexa to open "hows the surf" and then asking for a surf report according to 
+The program is initialized by telling Alexa to open "hows the surf" and then asking for a surf report according to 
 the sample utterances for the report function. When in doubt just ask hows the surf "hows the surf?" The program will
 proceed to ask you what direction the wind is going. The program also gives directions on how to answer as certain
 keywords are needed for the program to work as intended. A function following the question will use your answer to 
